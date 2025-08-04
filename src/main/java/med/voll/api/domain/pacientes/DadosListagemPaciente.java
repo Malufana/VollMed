@@ -7,7 +7,7 @@ public record DadosListagemPaciente(
         String cpf
 ) {
 
-    public DadosListagemPaciente(Pacientes pacientes){
+    public DadosListagemPaciente(Paciente pacientes){
         this(
                 pacientes.getId(),
                 pacientes.getNome(),

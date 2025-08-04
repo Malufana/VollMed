@@ -9,12 +9,12 @@ import lombok.NoArgsConstructor;
 import med.voll.api.domain.endereco.Endereco;
 
 @Table(name="pacientes")
-@Entity(name="Pacientes")
+@Entity
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of="id")
-public class Pacientes {
+public class Paciente {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -29,7 +29,7 @@ public class Pacientes {
 
     private Boolean ativo;
 
-    public Pacientes(DadosCadastroPaciente dados) {
+    public Paciente(DadosCadastroPaciente dados) {
         this.nome = dados.nome();
         this.email = dados.email();
         this.telefone = dados.telefone();

@@ -10,7 +10,7 @@ public record DadosDetalhamentoPacientes(
         String telefone,
         Endereco endereco
 ) {
-    public DadosDetalhamentoPacientes(Pacientes pacientes){
+    public DadosDetalhamentoPacientes(Paciente pacientes){
         this(
                 pacientes.getId(),
                 pacientes.getNome(),
